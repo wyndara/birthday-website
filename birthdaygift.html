@@ -1,0 +1,161 @@
+<html>
+<head>
+    <br>
+    <center>
+        <h1>HAPPY BIRTHDAY KASHMALA :)</h1>
+    </center>
+    <br>
+    <style>
+        body {
+            background-image: url('download.png'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the whole screen */
+            background-position: center; /* Centers the image */
+            background-repeat: repeat; /* Prevents image repetition */
+            height: 50vh; /* Full height */
+            margin: 0;
+        }
+    </style>
+
+    <center>
+        <img src="cake.png" width="300" , hight="300" alt="Centered Image">
+    </center>
+    <br>
+
+    <div style="display: grid; grid-template-columns: center; align-items: center;">
+        <center>
+            <img src="2.png" alt="Image 1" width="400">
+        </center>
+
+        <center>
+            <img src="12.png" alt="Image 2" width="400">
+
+        </center>
+    </div>
+
+
+   
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Game Box</title>
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Game Container */
+            #gameContainer {
+                width: 300px;
+                height: 300px;
+                border: 2px solid black;
+                position: relative;
+                overflow: hidden;
+                margin: 20px auto;
+                background-color: lightgray;
+            }
+
+            /* Game Box (Clickable Red Box) */
+            #gameBox {
+                width: 40px;
+                height: 40px;
+                background-color: rebeccapurple;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            /* Responsive */
+            @media (max-width: 400px) {
+                #gameContainer {
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <h1>Mini Game</h1>
+    <p>Click the red box to score points!</p>
+    <p>Score: <span id="score">0</span></p>
+
+    <!-- Small Box for the Game -->
+    <div id="gameContainer">
+        <div id="gameBox"></div>
+    </div>
+
+    <script>
+        let score = 0;
+        const gameContainer = document.getElementById("gameContainer");
+        const box = document.getElementById("gameBox");
+        const scoreDisplay = document.getElementById("score");
+
+        function moveBox() {
+            let x = Math.random() * (gameContainer.clientWidth - 40);
+            let y = Math.random() * (gameContainer.clientHeight - 40);
+            box.style.left = `${x}px`;
+            box.style.top = `${y}px`;
+        }
+
+        box.addEventListener("click", function () {
+            score++;
+            scoreDisplay.textContent = score;
+            moveBox();
+        });
+
+        moveBox();
+    </script>
+    <center>
+        <img src="cat.png" alt="image 4" width="400">
+
+    </center>
+    <center>
+        <img src="wish.png" alt="image 4" width="400">
+
+    </center>
+    <br>
+    <p>
+        happy 21!  may all your dreams come true.<br>
+        i tried something new for your birthday.<br>
+        I hope you like it ^-^
+    </p>
+
+    <style>
+        body {
+            background-color: #f4e1c1; /* Warm indie game background */
+            text-align: center;
+            font-family: "Press Start 2P", cursive; /* Retro pixel font */
+        }
+
+        .playlist-container {
+            background: #9b7653; /* Warm wood color */
+            border: 5px solid #7a5230; /* Darker wooden frame */
+            border-radius: 15px;
+            padding: 15px;
+            display: inline-block;
+            box-shadow: 5px 5px 0px #7a5230;
+        }
+
+        iframe {
+            border-radius: 10px;
+        }
+    </style>
+
+    <h2>🎵 Cozy songs to make your day🎵</h2>
+    <div class="playlist-container">
+        <iframe src="https://www.youtube.com/watch?v=KftLSF5mAjE&list=PL0Bav9nX05f7EynlgWCpAyMqFV7cdeUvP"
+                width="300" height="380" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+    </head>
+</html>
